@@ -1,38 +1,228 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.modal-btn {
+    display: flex;
+    width: 300px;
+    height: 100px;
+    font-size: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-.App-link {
-  color: #61dafb;
+.modal-content {
+    background-color: white;
+    width: 50%;
+    max-width: 800px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-header {
+    height: 40px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.close {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.first-row{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    width: 770px;
+    height: 50px;
+    justify-content: right;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+}
+
+.form-row button{
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    background-color: white;
+    font-size: 16px;
+}
+
+.form-group {
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.form-group select {
+    width: 100%;
+    height: 50px;
+}
+
+.first-row input {
+    width: 90px;
+    height: 47px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.till {
+    height: 50px;
+    display: flex;
+    width: 60px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    background-color: lightgray;
+    color: white;
+}
+
+.weekday{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+    padding: 0;
+}
+
+.group-buttons {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
+.pon {
+    background-color: white;
+    width: 125px;
+    height: 60px;
+}
+
+.vtor {
+    background-color: white;
+    width: 80px;
+    height: 60px;
+}
+
+.weekdays button {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    width: 80px;
+    height: 60px;
+    border-radius: 0;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+button.active {
+    background-color: lightblue;
+    color: white;
+}
+
+.third-row{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.third-row input{
+    width: 90px;
+    height: 47px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.dibuttons {
+    width: 60px;
+    height: 52px;
+    background-color: lightblue;
+}
+
+.tag{
+    width: 80px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: lightgray;
+    color: white;
+    border: 1px solid black;
+}
+
+.date-time {
+    display: flex;
+    width: 100%;
+}
+
+.fourth-row {
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.teacher-input {
+    flex: 2;
+}
+
+.room-input {
+    flex: 1;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.anouncements {
+    display: flex;
+    width: 750px;
+    padding: 15px;
+    margin: 0 auto;
+    justify-content: left;
+    align-items: center;
+    background-color: lightcoral;
+}
+
+
+.error-field {
+    border: 1px solid red;
+}
+
+.error {
+    color: red;
 }
